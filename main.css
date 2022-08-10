@@ -3,25 +3,42 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c68e7b;
+}
+.Etch {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  background-color: #7bb3c6;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  color: #f1f1f1;
+  margin: 10px 50px;
+}
+.control{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  width: 450px;
-  height: 550px;
-}
-.Etch {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 30px;
-  height: 100vh;
-}
-.grid-square {
-  padding: 10px;
+  width: 550px;
+  height: 600px;
+  background-color: white;
   border: 1px solid black;
 }
-.background {
-  background-color: black;
+.grid-square {
+  display: flex;
+  min-width: 4px;
+  min-height: 4px;
+  border: 1px solid black;
 }
+
