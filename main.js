@@ -20,6 +20,11 @@ makeTheBasicShape()
 numBtn.addEventListener("click", function () {
   container.innerHTML = "";
   let num = Number(prompt("how much squares do you want"));
+  if (num > 100) {
+    makeTheBasicShape()
+    alert("the number of squares must be less than one hundred")
+    return false
+  }
   container.style.cssText = ` grid-template-rows: repeat(${num}, 1fr); grid-template-columns: repeat(${num}, 1fr); `;
   let exp = num ** 2;
   console.log(exp);
